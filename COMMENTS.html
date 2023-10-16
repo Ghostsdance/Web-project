@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour&travel website</title>
 
+  <!-- font awesome cdn link  -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="assets/Css/٥.css" />
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+
+  <!-- custom js file link  -->
+  <script src="assets/Js/٥.js" defer></script>
+</head>
+<body>
+  <!-- header section starts  -->
+
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <img src="assets/img/Log.png" alt="?!?!" height="50px" />
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#home" class="logo">
+    </a>
+
+    <nav class="navbar">
+      <a data-aos="zoom-in-left" data-aos-delay="300" href="Home.html">home</a>
+      <a data-aos="zoom-in-left" data-aos-delay="450" href="About.html">About</a>
+
+      <a data-aos="zoom-in-left" data-aos-delay="600" href="COMMENTS.html"
+        >Comments</a
+      >
+      <a data-aos="zoom-in-left" data-aos-delay="750" href="#services"
+        >Admissions</a>
+
+      <br />
+    </header>
+    <br /><br /> <br />
+
+
+    <!-- review section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+      <div class="heading">
+
+        <h1>Comments</h1>
+      </div>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <div class="image">
+            <img src="assets/img/IT.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="link">Information Technology</a>
+            <p>
+              is branch of computer science, which can be defined as the overall study of procedure, structure, and the processing of various types of data. As this field continues to evolve across the world, its overall priority and importance has also grown, which is where we begin to see the introduction of computer science-related courses in K-12 education.
+            </p>
+            <div class="icon">
+              <span class="interaction"><i class="fas fa-thumbs-up" style="color: #29d9d5; font-size: 20px;" onclick="likeClick(this)"></i> <span class="like-count">0</span></span>
+              <span class="interaction"><i class="fas fa-thumbs-down" style="color: #29d9d5; font-size: 20px;" onclick="dislikeClick(this)"></i> <span class="dislike-count">0</span></span>
+              <span class="interaction"><i class="fas fa-heart" style="color: #29d9d5; font-size: 20px;" onclick="heartClick(this)"></i> <span class="heart-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <div class="image">
+            <img src="assets/img/Is.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="link">Information Systems</a>
+            <p>
+              is branch of computer science, which can be defined as the overall study of procedure, structure, and the processing of various types of data. As this field continues to evolve across the world, its overall priority and importance has also grown, which is where we begin to see the introduction of computer science-related courses in K-12 education.
+            </p>
+            <div class="icon">
+              <span class="interaction"><i class="fas fa-thumbs-up" style="color: #29d9d5; font-size: 20px;" onclick="likeClick(this)"></i> <span class="like-count">0</span></span>
+              <span class="interaction"><i class="fas fa-thumbs-down" style="color: #29d9d5; font-size: 20px;" onclick="dislikeClick(this)"></i> <span class="dislike-count">0</span></span>
+              <span class="interaction"><i class="fas fa-heart" style="color: #29d9d5; font-size: 20px;" onclick="heartClick(this)"></i> <span class="heart-count">0</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <div class="image">
+            <img src="assets/img/Cs.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="link">Computer Science</a>
+            <p>
+              is branch of computer science, which can be defined as the overall study of procedure, structure, and the processing of various types of data. As this field continues to evolve across the world, its overall priority and importance has also grown, which is where we begin to see the introduction of computer science-related courses in K-12 education.
+            </p>
+            <div class="icon">
+              <span class="interaction"><i class="fas fa-thumbs-up" style="color: #29d9d5; font-size: 20px;" onclick="likeClick(this)"></i> <span class="like-count">0</span></span>
+              <span class="interaction"><i class="fas fa-thumbs-down" style="color: #29d9d5; font-size: 20px;" onclick="dislikeClick(this)"></i> <span class="dislike-count">0</span></span>
+              <span class="interaction"><i class="fas fa-heart" style="color: #29d9d5; font-size: 20px;" onclick="heartClick(this)"></i> <span class="heart-count">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          let likeCount = 0;
+          let dislikeCount = 0;
+          let heartCount = 0;
+
+          function likeClick(element) {
+            likeCount++;
+            element.nextElementSibling.innerText = likeCount;
+          }
+
+          function dislikeClick(element) {
+            dislikeCount++;
+            element.nextElementSibling.innerText = dislikeCount;
+          }
+
+          function heartClick(element) {
+            heartCount++;
+            element.nextElementSibling.innerText = heartCount;
+          }
+        </script>
+      </div>
+    </section>
+
+
+
+    <!-- footer section starts  -->
+
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="logo">
+            <img src="assets/img/Log.png" alt="!!!!!" height="50px">
+          </a>
+
+          <p>
+            <em>Faculty of Computer and Information Technology</em>
+          </p>
+          <div class="share">
+            <a style="color:white" href="#" class="fab fa-facebook-f"></a>
+            <a
+              style="color:#25c0f8" href="#" class="fab fa-twitter"> </a>
+            <a
+              style="color:rgba(235,0,83,0.97)" href="#" class="fab fa-instagram"></a>
+            <a
+              style="color:blue" href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <h3>quick links</h3>
+          <a href="Home.html" class="links">
+            <i class="fas fa-arrow-right"></i> home
+          </a>
+          <a href="#About.jtml" class="links">
+            <i class="fas fa-arrow-right"></i> about
+          </a>
+          <a href="Comments.html" class="links">
+            <i class="fas fa-arrow-right"></i> Comments
+          </a>
+          <a href="Admissions.html" class="links">
+            <i class="fas fa-arrow-right"></i> Admission
+          </a>
+
+        </div>
+
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <h3>contact info</h3>
+          <p>
+            <i class="fas fa-map"></i> Sanaa, Yemen
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> +123-456-7890
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i> Fcit@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-clock"></i> 7:00am - 4:00pm
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+    >
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
+  </body>
+</html>
