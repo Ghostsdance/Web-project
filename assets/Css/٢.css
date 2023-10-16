@@ -1,1 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.container-new {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  padding-left: 0;
+  flex-direction: row;
+  align-content: center;
+}
+.container
+{
+  background-image: url('img.jpg');
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+.container .card
+{
 
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+  height: 350px;
+}
+.container .card .imgBx
+{
+  border-radius: 10px;
+  position: relative;
+  width: 260px;
+  height: 150px;
+  top: -60px;
+  left: 0px;
+  z-index: 1;
+  box-shadow: 0 5px 20px red;
+}
+.container .card .imgBx img
+{
+  max-width: 100%;
+  border-radius: 10px;
+
+}
+.container .card .content
+{
+  border: 15px red;
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-image: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+  border: 10px green;
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.1s;
+}
